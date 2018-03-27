@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* 字体 */
+@fs12:12px;
+@fs14:14px;
+@fs16:16px;
+/* 字体颜色 */
+@fff:#fff;
+@f98:#f98659;
+@aaa:#aaa;
+@2d0:#2d0d00;
+@666:#666;
+
+/* 背景颜色 */
+@btn-bg:#fdb76b;
+@com-bg:#f5f5f5;
+/* index(page) */
+.in-contanier{
+	margin-top: 510px;
+}
+.in-intro{
+	width: 436px;margin:0 auto;text-align: center;
+	p:first-child{
+		font-size: 20px;color: @2d0;letter-spacing: 10px;
+	}
+	p+p{
+		margin-top:15px;font-size: @fs12;color: @aaa;line-height: 20px;
+	}
+}
+.in-amount{
+	margin-top:40px;height: 110px;background: @com-bg;
+	li{
+		float: left;margin-top:35px;width: 240px;
+	}
+	.icon-amount{
+		position: relative; padding-left: 70px;
+		p:first-child{
+			font-size: @fs14;color: @aaa;
+		}
+		p+p{
+			font-size: 18px;color: @f98;line-height: 1.6;
+			font-weight: bold;
+		}
+		&:before{
+			content:"";
+			position: absolute;
+			left:0;top:0;
+		}
+		&:after{
+			content:"";
+			position: absolute;
+			right: 0px;top:-2px;height: 50px;width: 1px;background: #dcdddd;
+		}
+
+	}
+	.no-border:after{
+		opacity: 0;
+	}
+	.in-icon-1{
+		background:url(../images/index/img-1.png) no-repeat;
+	}.in-icon-2{
+		background:url(../images/index/img-2.png) no-repeat;
+	}.in-icon-3{
+		background:url(../images/index/img-3.png) no-repeat;
+	}.in-icon-4{
+		background:url(../images/index/img-4.png) no-repeat;
+	}.in-icon-5{
+		background:url(../images/index/img-5.png) no-repeat;
+	}
+}
+/* 帖子 */
+.in-main{
+	margin-top: 50px;
+}
+.in-topic{
+	width: 850px;margin-bottom: 40px;
+	.topic-more{
+		width: 100%; height: 40px;line-height: 40px;text-align: center;font-size: 14px;color: #fefefe;
+		background: @f98;
+		cursor: pointer;
+	}
+}
+.in-topic-nav{
+	border-bottom: 1px solid #dcdddd;
+	a{
+		display:inline-block; font-size: 20px;color: @aaa;width: 96px;text-align: center;
+		&.current{
+			color: @f98;border-bottom: 3px solid @f98;padding-bottom: 11px;
+		}
+		&:hover{
+			color: @f98;
+		}
+	}
+}
+
+.in-topic-box{
+	.topic-title{
+		overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+		a{
+			font-size: @fs16;color: @2d0;	
+			&:hover{
+				color: @f98;
+			}
+		}
+	}
+	.topic-text{
+		line-height:20px;height:40px;overflow:hidden; font-size: @fs12;color: @666;margin-top: 10px;	
+	}
+	.topic-img{
+		margin-top: 10px; width: 100%;overflow: hidden;height: 114px;
+		img{
+			float: left;margin-right: 10px;width: 152px;height: 114px;
+		}
+	}
+	.topic-basic-infor{
+		span{
+			color: #aaa;
+		}
+	}
+	.topic-clock{position: relative;
+		&:before{
+			content:"";
+			position: absolute;
+			left:0;top:0;
+			width:16px;height: 16px;
+			background:url(../images/icon.png) no-repeat -142px -1px; 
+		}
+	}
+	.topic-revert,.topic-heart,.topic-praise{
+		position: relative;padding-left: 22px;
+		&:before{
+			content:"";
+			position: absolute;
+			top:1px;left:0;
+			height: 16px;
+			width: 16px;
+			background:url(../images/icon.png) no-repeat -79px -1px;
+		}
+	}
+	.topic-heart:before{
+		content:"";
+		top: 2px;
+		background-position: -100px -1px;
+	}
+	.topic-praise:before{
+		content:"";
+		top: 0px;
+		background-position: -121px -1px;
+	}
+}
+/* 创新资讯，创智赛事，智创空间 */
+.in-right-aside{
+	width: 310px;border-top: 3px solid @f98;
+	dl{
+		padding:0px 10px 20px 15px;
+	}
+	dt,dd{
+		display: inline-block;vertical-align: middle;
+	}
+	dt{
+		width: 80px;height: 60px;
+		img{
+			width: 80px;height: 60px;
+		}
+	}
+	dd{
+		width: 190px;
+		p{
+			overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+		}
+		a{
+			color: @2d0;
+			&:hover{
+				color: @f98;	
+			}
+		}
+	}
+	.more-view{
+		height: 30px;text-align: center;line-height: 30px;background: #dcdddd;font-size: 12px;color: @aaa;
+		cursor:pointer ;
+	}
+	.zc-space{
+		img{
+			width: 180px;height: 133px;
+		}
+	}
+}
+/* 创享论坛 */
+//公告
+.f-notice-box{
+	width: 100%;height: 40px;line-height: 40px;border-bottom: 1px solid #fdb76b;
+	position: relative;
+	.f-scroll{
+		position: absolute;width: 100%;height: 40px;overflow: hidden;
+		p{
+			height:40px;line-height:40px;overflow: hidden; 
+			font-weight: bold;
+		}
+		p:before{
+			content:"";
+			display: inline-block;
+			width: 13px;height: 14px;
+			background:url(../images/icon.png) no-repeat -184px -1px;vertical-align: middle;
+		}
+	}
+}
+//帖子导航
+.f-topic-nav{
+	padding:15px 0 0 40px;border-bottom:1px solid #dcdddd;
+	li{
+		float: left;position: relative;
+		&:after{
+			content:"";
+			position: absolute;right: -1px;top:0;
+			width: 1px;height: 17px;background-color: #dcdddd;
+		}
+		a{
+			position: relative; display: inline-block;padding:0 9px 15px 30px;font-size: 16px;color:#666;border-bottom: 3px solid transparent;
+			
+		}
+		
+		.f-icon-1:before,.f-icon-2:before,.f-icon-3:before,.f-icon-4:before,.f-icon-5:before,.f-icon-6:before,.f-icon-7:before,.f-icon-8:before,.f-icon-9:before{
+			content: "";position: absolute;top:1px;left:10px; background:url(../images/icon.png) no-repeat;
+		}
+		.f-icon-8{
+			padding-left: 28px;
+		}
+		.f-icon-6:before{
+			left: 9px;
+		}
+		.f-icon-5:before{
+			top:3px;left:8px;
+		}
+		.f-icon-4:before{
+			top:3px;left:9px;
+		}
+		.f-icon-3{
+			padding-left: 26px;
+		}
+		.f-icon-1:before{
+			width: 17px;height:16px;background-position: -111px -22px;
+		}
+		.f-icon-2:before{
+			width: 15px;height:15px;background-position: -156px -22px;
+		}
+		.f-icon-3:before{
+			width: 11px;height:16px;background-position: -2px -57px;
+		}
+		.f-icon-4:before{
+			width: 16px;height:13px;background-position: -34px -57px;
+		}
+		.f-icon-5:before{
+			width: 16px;height:12px;background-position: -76px -57px;
+		}
+		.f-icon-6:before{
+			width: 16px;height:16px;background-position: -118px -57px;
+		}
+		.f-icon-7:before{
+			width: 16px;height:16px;background-position: -160px -57px;
+		}
+		.f-icon-8:before{
+			width: 12px;height:16px;background-position: -2px -78px;
+		}
+		.f-icon-9:before{
+			width: 14px;height:16px;background-position: -36px -78px;
+		}
+		&.active,&:hover{
+			a{
+				color: @f98;
+			}
+			.f-icon-1:before{
+				background-position: -133px -22px;
+			}	
+			.f-icon-2:before{
+				background-position: -177px -22px;
+			}	
+			.f-icon-3:before{
+				background-position: -18px -57px;
+			}	
+			.f-icon-4:before{
+				width: 16px;height:13px;background-position: -55px -57px;
+			}	
+			.f-icon-5:before{
+				background-position: -97px -57px;
+			}	
+			.f-icon-6:before{
+				background-position: -139px -57px;
+			}	
+			.f-icon-7:before{
+				background-position: -181px -57px;
+			}	
+			.f-icon-8:before{
+				background-position: -19px -78px;
+			}
+			.f-icon-9:before{
+				background-position: -55px -78px;
+			}																		
+		}
+		&.active{
+			a{
+				border-color: @f98;
+			}
+		}			
+	}
+	.no-border:after{
+		background-color: transparent;
+	}	
+}
+/* 论坛详情 */
+.in-topic-infor{
+	width: 850px;
+}
+.in-infor-content{
+	padding:30px 20px;
+	.in-infor-praise,.in-infor-heart{
+		position: relative;max-width:50px; text-align: center;
+		&:before{
+			content:"";
+			position: absolute;
+			bottom: 22px;left:5px;
+			width: 26px;height: 26px;
+			background:url(../images/icon.png) no-repeat -1px -106px;			
+		}
+	}
+}
