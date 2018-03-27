@@ -1309,3 +1309,10 @@ body{
 .mt-role-name{
   display: inline-block;width: 80px;line-height: 1.2;margin-top: 12px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;
 }
+/* 追加鼠标经过效果 */
+.in-topic .in-topic-box{
+  border-bottom: 1px solid transparent;
+}
+.in-topic .in-topic-box:hover{
+    border-bottom-color:#f98659;padding-bottom: 20px;margin-bottom:20px;
+}
